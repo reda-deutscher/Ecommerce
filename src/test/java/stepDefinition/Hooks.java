@@ -10,9 +10,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Hooks {
     public static WebDriver driver =null;
+    String path ="C:\\Users\\redaa\\Downloads\\Compressed\\chromedriver.exe";
     @Before
     public void openBrowser(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\redaa\\IdeaProjects\\untitled2\\redaFwd\\newProject\\res\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",path);
          driver = new ChromeDriver();
          driver.manage().window().maximize();
          driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
@@ -24,9 +25,9 @@ public class Hooks {
        driver.quit();
 
     }
-    public static void scroll_down_to_products() {
-        JavascriptExecutor scroll = (JavascriptExecutor) driver;
-        scroll.executeScript("scroll(0,2000)");
+    public static void scrollDown() {
+        JavascriptExecutor scrollToElle = (JavascriptExecutor) driver;
+        scrollToElle.executeScript("scroll(0,2000)");
 
     }
 

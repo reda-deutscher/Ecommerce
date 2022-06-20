@@ -1,4 +1,4 @@
-@firstTest
+@@firstTest
 Feature: Registration Page
 
   Scenario: registration with valid data

@@ -7,4 +7,4 @@ Feature: reset his password
     When user enters his valid email address
     And user clicks on recover button
     Then user got a Displayed Message
-    And user could close the Notification Bar
+    And user close the Notification Bar

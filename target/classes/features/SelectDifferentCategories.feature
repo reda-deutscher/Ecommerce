@@ -7,5 +7,5 @@ Feature: user could select different Categories
 
 Given user navigates to login page
 When user can login with valid email and valid password
-    Given user select random category
+    Given  select random category
     Then user should redirected to the page of the selected category
