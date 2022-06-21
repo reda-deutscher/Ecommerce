@@ -61,7 +61,7 @@ public class FollowUsStepDef_6 {
     public void goToRssLink() throws InterruptedException {
        goToRss().click();
         Thread.sleep(2000);
-        Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://demo.nopcommerce.com/news/rss/1");
+        Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://demo.nopcommerce.com/new-online-store-is-open");
 
     }
 

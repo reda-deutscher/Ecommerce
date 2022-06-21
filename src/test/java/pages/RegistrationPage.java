@@ -51,13 +51,7 @@ public class RegistrationPage {
         return Hooks.driver.findElement(By.cssSelector("input[id=\"Email\"]"));
     }
 
-    public static WebElement enterCompanyName() {
-        return Hooks.driver.findElement(By.id("Company"));
-    }
 
-    public static WebElement newsletterOption() {
-        return Hooks.driver.findElement(By.id("Newsletter"));
-    }
 
     public static WebElement enterPassword() {
         return Hooks.driver.findElement(By.id("Password"));
@@ -71,7 +65,7 @@ public class RegistrationPage {
         return Hooks.driver.findElement(By.id("register-button"));
     }
 
-    // After Registration
+
     public static WebElement message() {
         return Hooks.driver.findElement(By.className("result"));
 
