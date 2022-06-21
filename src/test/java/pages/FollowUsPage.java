@@ -7,18 +7,32 @@ import stepDefinition.Hooks;
 import static stepDefinition.Hooks.scrollDown;
 
 public class FollowUsPage {
-    public static WebElement goToFacebook(){
+    public static WebElement goToFacebook() {
         scrollDown();
 
         return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[1]/a"));
 
     }
-    public static WebElement goToTwitter(){
+
+    public static WebElement goToTwitter() {
         scrollDown();
 
         return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[2]/a"));
 
     }
 
+    public static WebElement goToRss() {
+        scrollDown();
 
+        return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[3]/a"));
+
+
+    }
+    public static WebElement goToYoutube() {
+        scrollDown();
+
+        return Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[4]/div[1]/div[4]/div[1]/ul/li[4]/a"));
+
+
+    }
 }

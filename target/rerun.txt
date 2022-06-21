@@ -1,4 +1,3 @@
-file:src/main/resources/features/slider.feature:5:11
-file:src/main/resources/features/login.feature:3
-file:src/main/resources/features/switch.feature:4
 file:src/main/resources/features/wishiist.feature:4
+file:src/main/resources/features/login.feature:3
+file:src/main/resources/features/slider.feature:5:11

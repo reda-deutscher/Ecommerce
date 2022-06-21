@@ -6,6 +6,6 @@ Feature: Registration Page
     Given open the registration page
     When enter valid data
     And click registration button
-    Then a success message is displayed
-    And click log out
+    Then message is displayed
+    And  log out
 

@@ -12,3 +12,15 @@ Feature: follow
 
     And user go to twitter
     Then go to home page
+
+  Scenario: open youtube
+
+    Given user click youtube link
+    And user go to youtube
+    Then go to home page
+
+  Scenario: user opens  rss
+
+    Given user click rss icon link
+
+

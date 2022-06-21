@@ -5,25 +5,25 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import stepDefinition.Hooks;
 
+import static stepDefinition.Hooks.scroll;
+import static stepDefinition.Hooks.scrollDown;
 
 
 public class SwitchPage {
 
-    public static Select selectCurrency() {
-        Select curr = new Select(Hooks.driver.findElement(By.id("customerCurrency")));
-        curr.selectByValue("https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2Fhtc-one-mini-blue");
+    public static WebElement selectCurrency() {
 
-        return curr;
+       return Hooks.driver.findElement(By.xpath("//*[@id=\"customerCurrency\"]/option[2]"));
+
+
     }
 
 
 
-    public static String assertCurrency() {
+    public static WebElement assertPrice() {
 
-     String euro= selectCurrency().toString();
-
-        System.out.println(euro);
-        return euro;
+        scroll();
+        return  Hooks.driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div/div[4]/div[2]/div[1]/div/div[2]/div[3]/div[1]/span"));
     }
 }
 

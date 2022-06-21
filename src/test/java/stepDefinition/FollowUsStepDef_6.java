@@ -8,7 +8,7 @@ import pages.FollowUsPage;
 
 import java.util.ArrayList;
 
-import static pages.FollowUsPage.goToFacebook;
+import static pages.FollowUsPage.*;
 import static stepDefinition.Hooks.driver;
 
 public class FollowUsStepDef_6 {
@@ -46,5 +46,25 @@ public class FollowUsStepDef_6 {
         Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://twitter.com/nopCommerce");
 
     }
+    @Given("user click youtube link")
+    public void goToYoutubeLink() throws InterruptedException {
+        goToYoutube() .click();
+        Thread.sleep(2000);
+        Tabs = new ArrayList<>(driver.getWindowHandles());
+        driver.switchTo().window(Tabs.get(1));
+    }
+    @And("user go to youtube")
+    public void asserYoutubeUrl(){
+        Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://www.youtube.com/user/nopCommerce");
+    }
+    @Given("user click rss icon link")
+    public void goToRssLink() throws InterruptedException {
+       goToRss().click();
+        Thread.sleep(2000);
+        Assert.assertEquals(Hooks.driver.getCurrentUrl(),"https://demo.nopcommerce.com/news/rss/1");
+
+    }
+
+
 
 }
