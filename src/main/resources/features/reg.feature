@@ -1,4 +1,4 @@
-@@firstTest
+@smoke
 Feature: Registration Page
 
   Scenario: registration with valid data
