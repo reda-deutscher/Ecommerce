@@ -1,2 +1,1 @@
-file:src/main/resources/features/wishiist.feature:4
 file:src/main/resources/features/slider.feature:5:11

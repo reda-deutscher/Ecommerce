@@ -11,8 +11,8 @@ import static pages.RegistrationPage.*;
 
 
 public class Reg_1 {
-    public static String email = "reda10ader@gmail.com";
-    public static String pass = "123456789";
+    public static String email = "reda100ader@gmail.com";
+    public static String pass = "1234516789";
     public static String firstName = "reda";
     public static String lastName = "Ahmed";
 

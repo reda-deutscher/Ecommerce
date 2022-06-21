@@ -10,7 +10,7 @@ import static pages.WishlistPage.message;
 public class Wishlist_9 {
 
     @And("selects his favorite product")
-    public void addProduct(){
+    public void addProduct() throws InterruptedException {
         addToWishlistIcon().click();
     }
 
